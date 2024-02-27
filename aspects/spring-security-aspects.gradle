@@ -5,10 +5,6 @@ compileAspectj {
 	sourceCompatibility "17"
 	targetCompatibility "17"
 }
-compileTestAspectj {
-	sourceCompatibility "17"
-	targetCompatibility "17"
-}
 
 dependencies {
 	management platform(project(":spring-security-dependencies"))
@@ -18,7 +14,6 @@ dependencies {
 	api 'org.springframework:spring-context'
 	api 'org.springframework:spring-core'
 
-	testImplementation 'org.springframework:spring-aop'
 	testImplementation "org.assertj:assertj-core"
 	testImplementation "org.junit.jupiter:junit-jupiter-api"
 	testImplementation "org.junit.jupiter:junit-jupiter-params"
